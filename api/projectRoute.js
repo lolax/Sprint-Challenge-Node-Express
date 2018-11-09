@@ -47,7 +47,8 @@ route.delete('/:id', (req, res) => {
     projectDb.remove(id)
         .then(count => {
             count === 1 ?
-            res.status(204).json() :
+            projectDb.get()
+            .then(projects => res.status(200).json(projects)) :
             res.status(404).json({ error: "Invalid Id." })
         })
         .catch(err => res.status(500).json({ error: "The project could not be deleted.", err }))
