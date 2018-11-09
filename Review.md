@@ -5,6 +5,7 @@
 
 ## What is Express?
     Express is a lightweight framework that is used to abstract lower-level processes/pieces for server APIs, like React does for rendered UIs.
+    
 ## Mention two parts of Express that you learned about this week.
     Routing - organize requests by URL & HTTP method 
     Routers - segment application by separate concerns (eg. users db router & posts db router) with individual preferences (eg. different middleware).
